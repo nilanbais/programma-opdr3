@@ -45,3 +45,7 @@ body {
   padding: 0.5vh;
   opacity: 100%;
 }
+
+.section__title {
+  font-size: 100%;
+}
