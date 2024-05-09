@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'>
 
 </head>
 <body>
@@ -29,9 +30,11 @@
 
         <!-- User input -->
         <section class="length section">
-            <h2 class="length__title">length:</h2>
-            <input id="slider" type="range" min="8" max="32" value="16" />
+            <div class="length__title" data-length="0">length:</div>
 
+            <div class="slider__section">
+                 <input class="length__slider" id="slider" type="range" min="8" max="32" value="16" >
+            </div>
         </section>
 
         <seciton class="settings section" id="settings">
