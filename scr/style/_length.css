@@ -1,0 +1,80 @@
+.length__title {
+  font-size: 70%;
+  opacity: 90%;
+  font-weight: 900;
+}
+
+.slider__section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.length__slider {
+  position: relative;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+.length__slider::before,
+.length__slider::after {
+  position: absolute;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.length__slider::before {
+  content: attr(min);
+  left: -0.8rem;
+}
+.length__slider::after {
+  content: attr(max);
+  right: -1.2rem;
+}
+
+.length__title::after {
+  content: attr(data-length);
+  position: relative;
+  right: -0.15rem;
+  font-variant-numeric: tabular-nums;
+  color: #fff;
+}
+
+/* The slider itself */
+#slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: calc(100% - (60px + 10px)); /* Full-width */
+  height: 2px; /* Specified height */
+  background: var(--slider-bg-color); /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+#slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px;
+  border-radius: 8px;
+  background: var(--primary-color); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+#slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: var(--primary-color); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}

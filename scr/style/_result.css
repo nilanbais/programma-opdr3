@@ -1,0 +1,26 @@
+.result {
+  font-family: var(--font-family-viewbox);
+}
+
+.result__info {
+  position: absolute;
+  bottom: 4px;
+  font-size: 0.8rem;
+  /* onderstaande moet erbij als js wordt toegevoegd om dom obj te verstoppen tot nodig */
+  /* opacity: 0; */
+}
+.right {
+  right: 8px;
+}
+.left {
+  left: 8px;
+}
+
+.result__viewbox {
+  width: 100%;
+  /* height: 100%; */
+  position: relative;
+  top: 0.8rem;
+  display: flex;
+  justify-content: center;
+}
