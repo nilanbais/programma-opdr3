@@ -20,19 +20,24 @@
     <main class="container">
         <!-- Result -->
         <section class="result section" id="result_section">
+
             <div class="result__info right">click to copy</div>
             <div class="result__info left">copied</div>
             <div class="result__viewbox" id="result">Click Generate button</div>
+
         </section>
 
         <!-- User input -->
+        <section class="length section">
+            <h2 class="length__title">length:</h2>
+            <input id="slider" type="range" min="8" max="32" value="16" />
+
+        </section>
+
         <seciton class="settings section" id="settings">
-            <div class="length">
-                <h2 class="length__title">length:</h2>
-                <input id="slider" type="range" min="8" max="32" value="16" />
-            </div>
 
         </seciton>
+
         <section class="section" id="generate"></section>
     </main>
 
