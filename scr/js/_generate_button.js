@@ -36,5 +36,9 @@ generateBtn.addEventListener('click', () => {
 	const hasSymbol = symbolEl.checked;
 	generatedPasswordFlag = true;
 
-	result_viewbox.innerText = generatePassword(length, hasLower, hasUpper, hasNumber, hasSymbol);
+	if (!hasLower & !hasUpper & !hasNumber & !hasSymbol) {
+		result_viewbox.innerText = 'Selecteer iets man bro';
+	} else {
+		result_viewbox.innerText = generatePassword(length, hasLower, hasUpper, hasNumber, hasSymbol);
+	}
 }) 
