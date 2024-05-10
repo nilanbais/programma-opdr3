@@ -5,6 +5,7 @@ button {
 
 #copy-btn {
   visibility: hidden;
+  cursor: pointer;
 }
 
 #copied-info {
