@@ -44,24 +44,24 @@
 
             <div class="settings__title section__title">settings</div>
 
-            <div class="setting">
-                <input type="checkbox" id="uppercase" checked />
-                <label for="uppercase">Include Uppercase</label>
+            <div class="setting" id="uppercase_setting">
+                <input type="checkbox" id="uppercase_checkbox" checked />
+                <label for="uppercase_checkbox" id="uppercase_label">Include Uppercase</label>
             </div>
 
-            <div class="setting">
-                <input type="checkbox" id="lowercase" checked />
-                <label for="lowercase">Include Lowercase</label>
+            <div class="setting" id="lowercase_setting">
+                <input type="checkbox" id="lowercase_checkbox" checked />
+                <label for="lowercase_checkbox" id="setting_label">Include Lowercase</label>
             </div>
 
-            <div class="setting">
-                <input type="checkbox" id="number" checked />
-                <label for="number">Include Numbers</label>
+            <div class="setting" id="number_setting">
+                <input type="checkbox" id="number_checkbox" checked />
+                <label for="number_checkbox" id="number_label">Include Numbers</label>
             </div>
 
-            <div class="setting">
-                <input type="checkbox" id="symbol" />
-                <label for="symbol">Include Symbols</label>
+            <div class="setting" id="symbol_setting">
+                <input type="checkbox" id="symbol_checkbox" />
+                <label for="symbol_checkbox" id="symbol_label">Include Symbols</label>
             </div>
 
         </seciton>
@@ -76,6 +76,7 @@
 
     <script src="./js/main.js"></script>
     <script type="module" src="./js/_slider.js"></script>
-    <script type="module" src="./js/_button.js"></script>
+    <script type="module" src="./js/_generate_button.js"></script>
+    <script type="module" src="./js/_settings_button.js"></script>
 </body>
 </html>

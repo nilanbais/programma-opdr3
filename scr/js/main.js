@@ -2,5 +2,3 @@
 
 // Clear the concole on every refresh
 console.clear();
-
-

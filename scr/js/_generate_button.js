@@ -8,10 +8,10 @@ const result_viewbox = document.getElementById("result");
 const slider = document.querySelector(".length__slider");
 
 // Checkboxes representing the options that is responsible to create differnt type of password based on user
-const uppercaseEl = document.getElementById("uppercase");
-const lowercaseEl = document.getElementById("lowercase");
-const numberEl = document.getElementById("number");
-const symbolEl = document.getElementById("symbol");
+const uppercaseEl = document.getElementById("uppercase_checkbox");
+const lowercaseEl = document.getElementById("lowercase_checkbox");
+const numberEl = document.getElementById("number_checkbox");
+const symbolEl = document.getElementById("symbol_checkbox");
 
 
 // Button to copy the text
