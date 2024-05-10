@@ -6,6 +6,8 @@ const randomFunc = {
 	symbol: getRandomSymbol,
 };
 
+export const symbols = '~!@#$%^&*()_+{}":?><;.,';
+
 // Random more secure value
 function secureMathRandom() {
 	return window.crypto.getRandomValues(new Uint32Array(1))[0] / (Math.pow(2, 32) - 1);
@@ -23,7 +25,6 @@ function getRandomNumber() {
 	return String.fromCharCode(Math.floor(secureMathRandom() * 10) + 48);
 }
 function getRandomSymbol() {
-	const symbols = '~!@#$%^&*()_+{}":?><;.,';
 	return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
