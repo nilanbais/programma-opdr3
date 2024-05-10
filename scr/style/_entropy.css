@@ -1,0 +1,8 @@
+.entropy__viewbox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0.1rem;
+  display: flex;
+  justify-content: center;
+}

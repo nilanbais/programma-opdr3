@@ -33,7 +33,7 @@ generateBtn.addEventListener('click', () => {
 	copiedInfo.style.visibility = '';
 	
 	if (!hasLower & !hasUpper & !hasNumber & !hasSymbol) {
-		result_viewbox.innerText = 'Selecteer iets man bro';
+		result_viewbox.innerText = 'Selecteer iets dan neef';
 		copyBtn.style.visibility = '';
 		entropy_viewbox.innerText = '';
 	} else {
