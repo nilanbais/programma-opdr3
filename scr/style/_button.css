@@ -3,6 +3,14 @@ button {
   outline: 0;
 }
 
+#copy-btn {
+  visibility: hidden;
+}
+
+#copied-info {
+  visibility: hidden;
+}
+
 .btn.generate {
   user-select: none;
   position: relative;
