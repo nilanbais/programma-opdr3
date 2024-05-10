@@ -22,12 +22,12 @@ function calcEntropy(length, lower, upper, number, symbol) {
     }
     
     const password_entropy = Math.log2(Math.pow(possible_chars, length));
-    return password_entropy;
+    return Math.round(password_entropy);
 }
 
 export function generatePasswordStrength(length, lower, upper, number, symbol) {
     const password_entropy = calcEntropy(length, lower, upper, number, symbol);
-    
+    console.log(password_entropy)
     let password_strength = "";
     if (password_entropy <= 35) {
         password_strength = "Very weak";
