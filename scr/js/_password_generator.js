@@ -36,16 +36,20 @@ export function generatePassword(length, lower, upper, number, symbol) {
 	let generatedPassword = "";
 	const typesCount = lower + upper + number + symbol;
 
+	// returns array of key-value pairs with value dtyle: bool> also filters to contain only {name: value} with value==true
 	const typesArr = [{ lower }, { upper }, { number }, { symbol }].filter(item => Object.values(item)[0]);
+
 	if (typesCount === 0) {
 		return "";
 	}
 	for (let i = 0; i < length; i++) {
 		typesArr.forEach(type => {
+			// funcName == name from {name: value}
 			const funcName = Object.keys(type)[0];
 			generatedPassword += randomFunc[funcName]();
 		});
 	}
+	// shuffles all chars of password and returns th result
 	return generatedPassword.slice(0, length)
 									.split('').sort(() => Math.random() - 0.5)
 									.join('');

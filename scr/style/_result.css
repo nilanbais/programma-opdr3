@@ -6,8 +6,7 @@
   position: absolute;
   bottom: 4px;
   font-size: 0.8rem;
-  /* onderstaande moet erbij als js wordt toegevoegd om dom obj te verstoppen tot nodig */
-  /* opacity: 0; */
+
 }
 .right {
   right: 8px;

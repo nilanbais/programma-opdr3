@@ -31,4 +31,5 @@ slider.addEventListener("input", event => {
 	applyFill(event.target);
 });
 
+// set initial value on page load
 applyFill(slider);

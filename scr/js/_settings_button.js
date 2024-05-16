@@ -32,7 +32,7 @@ function changeBackground(checkbox, setting_div) {
         if (checkbox.checked) {
             setting_div.style.backgroundImage = 'linear-gradient(135deg, #667eea79 0%, #764ba2 100%)';
         } else {
-            setting_div.style.backgroundImage = '';
+            setting_div.style.backgroundImage = ''; // terug naar default
         }
     }
 }
